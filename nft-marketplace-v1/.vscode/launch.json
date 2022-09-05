@@ -1,0 +1,176 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in library 'cw20-example'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--lib",
+                    "--package=cw20-example"
+                ],
+                "filter": {
+                    "name": "cw20-example",
+                    "kind": "lib"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug example 'schema'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--example=schema",
+                    "--package=cw20-example"
+                ],
+                "filter": {
+                    "name": "schema",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in example 'schema'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--example=schema",
+                    "--package=cw20-example"
+                ],
+                "filter": {
+                    "name": "schema",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in library 'deposit-cw20'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--lib",
+                    "--package=deposit-cw20"
+                ],
+                "filter": {
+                    "name": "deposit-cw20",
+                    "kind": "lib"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug example 'schema'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--example=schema",
+                    "--package=deposit-cw20"
+                ],
+                "filter": {
+                    "name": "schema",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in example 'schema'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--example=schema",
+                    "--package=deposit-cw20"
+                ],
+                "filter": {
+                    "name": "schema",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in library 'nft'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--lib",
+                    "--package=nft"
+                ],
+                "filter": {
+                    "name": "nft",
+                    "kind": "lib"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug example 'schema'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--example=schema",
+                    "--package=nft"
+                ],
+                "filter": {
+                    "name": "schema",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in example 'schema'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--example=schema",
+                    "--package=nft"
+                ],
+                "filter": {
+                    "name": "schema",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
